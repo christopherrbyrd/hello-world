@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'cd $HOME'
                 sh 'echo $PWD'
-                sh 'python --version'
+                sh 'who am I'
             }
         }
         stage('build1') {
