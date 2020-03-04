@@ -19,23 +19,23 @@ pipeline {
             steps {
                 sh 'cd /Users/christopherbyrd/Projects/showme_code/codebase'
                 sh 'echo $PWD'
-                sh 'python -c "print('register snapshot')"'
+                sh 'python hello.py --count=3 --name=Chris'
 
             }
         }
         stage('build3') {
             steps {
-                sh 'python -c 'print("delete existing indexes")''
+                sh 'python hello.py --count=3 --name=Sally'
             }
         }
         stage('build4') {
             steps {
-                sh 'python -c 'print("restore snapshot")''
+                sh 'python hello.py --count=3 --name=Mark'
             }
         }
         stage('build5') {
             steps {
-                sh 'python -c 'print("validate data accessibility")''
+                sh 'python hello.py --count=3 --name=Tom'
             }
         }
         
