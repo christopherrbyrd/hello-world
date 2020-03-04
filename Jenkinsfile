@@ -19,22 +19,22 @@ pipeline {
             steps {
                 sh 'cd /Users/christopherbyrd/Projects/showme_code/codebase'
                 sh 'echo $PWD'
-                sh 'python --version'
+                sh 'python -c 'print("register snapshot")''
             }
         }
         stage('build3') {
             steps {
-                sh 'python -c 'print("delete existing indexes")' '
+                sh 'python -c 'print("delete existing indexes")''
             }
         }
         stage('build4') {
             steps {
-                sh 'python -c 'print("restore snapshot")' '
+                sh 'python -c 'print("restore snapshot")''
             }
         }
         stage('build5') {
             steps {
-                sh 'python -c 'print("validate data accessibility")' '
+                sh 'python -c 'print("validate data accessibility")''
             }
         }
         
