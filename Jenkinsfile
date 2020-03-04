@@ -19,7 +19,11 @@ pipeline {
             steps {
                 sh 'cd /Users/christopherbyrd/Projects/showme_code/codebase'
                 sh 'echo $PWD'
+<<<<<<< HEAD
                 sh 'python -c 'print("register snapshot")''
+=======
+                sh 'python -c "print('register snapshot')"'
+>>>>>>> parent of cdfbdcb... tweak
             }
         }
         stage('build3') {
