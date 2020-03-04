@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh 'cd /Users/christopherbyrd/Projects/showme_code/codebase'
                 sh 'echo $PWD'
-                sh 'python -c "print('register snapshot')"'
+                sh 'python --version'
             }
         }
         stage('build3') {
