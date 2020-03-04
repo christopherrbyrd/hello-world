@@ -11,7 +11,7 @@ pipeline {
         }
         stage('build1') {
             steps {
-                sh 'cd /Users/christopherbyrd/Projects/tf_aws_elasticsearch/'
+             /*   sh 'cd /Users/christopherbyrd/Projects/tf_aws_elasticsearch/' */
                 sh 'echo $PWD'
                 sh 'terraform --version'
             }
